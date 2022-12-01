@@ -1,7 +1,5 @@
 import unittest
-
-
-import CSVPrinter
+from ISSL import CSVPrinter
 
 
 class TestCSVPrinter(unittest.TestCase):
@@ -24,6 +22,3 @@ class TestCSVPrinter(unittest.TestCase):
         except FileExistsError as error:
             print("error!")
 
-
-#test = TestCSVPrinter()
-#test.test_read()
