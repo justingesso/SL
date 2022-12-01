@@ -19,6 +19,6 @@ class TestCSVPrinter(unittest.TestCase):
             printer = CSVPrinter.CSVPrinter("csv.csv")
             printer.read()
             unittest.TestCase.fail("This line should not be involked")
-        except FileExistsError as error:
+        except FileNotFoundError as error:
             print("error!")
 
